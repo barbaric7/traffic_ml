@@ -1,0 +1,169 @@
+{
+  "test_metrics": {
+    "MAE": 276.6,
+    "MSE": 241518.9,
+    "RMSE": 491.4,
+    "R2": 0.9387,
+    "Adj_R2": 0.9386,
+    "MAPE": 3.3899168693177005e+17
+  },
+  "all_model_metrics": {
+    "Decision Tree": {
+      "MAE": 285.7,
+      "MSE": 256590.9,
+      "RMSE": 506.5,
+      "R2": 0.9349,
+      "Adj_R2": 0.9347,
+      "MAPE": 3.4534598703116794e+17
+    },
+    "Random Forest": {
+      "MAE": 276.6,
+      "MSE": 241518.9,
+      "RMSE": 491.4,
+      "R2": 0.9387,
+      "Adj_R2": 0.9386,
+      "MAPE": 3.3899168693177005e+17
+    },
+    "Gradient Boosting": {
+      "MAE": 267.3,
+      "MSE": 212733.5,
+      "RMSE": 461.2,
+      "R2": 0.946,
+      "Adj_R2": 0.9459,
+      "MAPE": 3.383691328044614e+17
+    }
+  },
+  "cv_comparison": {
+    "Decision Tree": {
+      "CV_R2_mean": 0.9347,
+      "CV_R2_std": 0.0033,
+      "CV_MAE_mean": 287.9,
+      "CV_MAE_std": 2.7,
+      "CV_RMSE_mean": 506.8,
+      "CV_RMSE_std": 11.7,
+      "CV_R2_per_fold": [
+        0.9397,
+        0.9359,
+        0.933,
+        0.9353,
+        0.9298
+      ],
+      "CV_MAE_per_fold": [
+        285.0,
+        286.9,
+        287.3,
+        287.2,
+        293.1
+      ]
+    },
+    "Random Forest": {
+      "CV_R2_mean": 0.9404,
+      "CV_R2_std": 0.0027,
+      "CV_MAE_mean": 274.0,
+      "CV_MAE_std": 2.7,
+      "CV_RMSE_mean": 484.3,
+      "CV_RMSE_std": 9.4,
+      "CV_R2_per_fold": [
+        0.9443,
+        0.9421,
+        0.9406,
+        0.938,
+        0.9369
+      ],
+      "CV_MAE_per_fold": [
+        269.7,
+        274.1,
+        272.7,
+        277.3,
+        276.0
+      ]
+    },
+    "Gradient Boosting": {
+      "CV_R2_mean": 0.9475,
+      "CV_R2_std": 0.0026,
+      "CV_MAE_mean": 263.8,
+      "CV_MAE_std": 2.3,
+      "CV_RMSE_mean": 454.6,
+      "CV_RMSE_std": 10.0,
+      "CV_R2_per_fold": [
+        0.9517,
+        0.9491,
+        0.9464,
+        0.946,
+        0.9442
+      ],
+      "CV_MAE_per_fold": [
+        259.8,
+        262.7,
+        266.1,
+        265.2,
+        265.2
+      ]
+    }
+  },
+  "feature_importance": {
+    "hour": 0.84181,
+    "day_of_week": 0.05592,
+    "is_weekend": 0.05116,
+    "temp_c": 0.02405,
+    "month": 0.00771,
+    "is_peak": 0.00771,
+    "clouds_all": 0.00439,
+    "rain_1h": 0.00131,
+    "weather_main_Mist": 0.00129,
+    "weather_main_Clouds": 0.00112,
+    "weather_main_Fog": 0.00073,
+    "weather_main_Haze": 0.00072,
+    "weather_main_Snow": 0.00064,
+    "weather_main_Clear": 0.00056,
+    "weather_main_Rain": 0.00036,
+    "weather_main_Drizzle": 0.00022,
+    "weather_main_Thunderstorm": 0.00021,
+    "snow_1h": 9e-05,
+    "is_holiday": 2e-05,
+    "weather_main_Squall": 1e-05,
+    "weather_main_Smoke": 0.0
+  },
+  "hyperparameters": {
+    "Decision Tree": {
+      "max_depth": 10
+    },
+    "Random Forest": {
+      "n_estimators": 200,
+      "max_depth": 15
+    },
+    "Gradient Boosting": {
+      "n_estimators": 200,
+      "max_depth": 5,
+      "learning_rate": 0.1
+    }
+  },
+  "train_size": 32451,
+  "test_size": 8113,
+  "n_features": 21,
+  "feature_cols": [
+    "rain_1h",
+    "snow_1h",
+    "clouds_all",
+    "is_holiday",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_peak",
+    "temp_c",
+    "weather_main_Clear",
+    "weather_main_Clouds",
+    "weather_main_Drizzle",
+    "weather_main_Fog",
+    "weather_main_Haze",
+    "weather_main_Mist",
+    "weather_main_Rain",
+    "weather_main_Smoke",
+    "weather_main_Snow",
+    "weather_main_Squall",
+    "weather_main_Thunderstorm"
+  ],
+  "seed": 42,
+  "best_model": "Random Forest"
+}
